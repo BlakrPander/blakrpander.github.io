@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+<!--  <title>EverydayTopics-2023-Oct-30 | Hexo</title>-->
+  <title>EverydayTopics-2023-Oct-30 | blakrpander&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="题目1. 两数之和 解法暴力第一想到的就是暴力：一个个算呗，但是这样感觉效率还是太低了，总之贴上代码： 123456789class Solution:    def twoSum(self, nums: List[int], target: int) -&gt; List[int]:        n&#x3D;len(nums)        for i in range(n-1):">
+<meta property="og:type" content="article">
+<meta property="og:title" content="EverydayTopics-2023-Oct-30">
+<meta property="og:url" content="http://example.com/2023/10/30/EverydayTopics-2023-Oct-30/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="题目1. 两数之和 解法暴力第一想到的就是暴力：一个个算呗，但是这样感觉效率还是太低了，总之贴上代码： 123456789class Solution:    def twoSum(self, nums: List[int], target: int) -&gt; List[int]:        n&#x3D;len(nums)        for i in range(n-1):">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-10-30T08:00:42.000Z">
+<meta property="article:modified_time" content="2023-10-30T08:23:35.019Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="每日一题">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="哈希表">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">KEEP GOING</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-EverydayTopics-2023-Oct-30" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/10/30/EverydayTopics-2023-Oct-30/" class="article-date">
+  <time class="dt-published" datetime="2023-10-30T08:00:42.000Z" itemprop="datePublished">2023-10-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      EverydayTopics-2023-Oct-30
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/two-sum/">1. 两数之和</a></p>
+<h2 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h2><h3 id="暴力"><a href="#暴力" class="headerlink" title="暴力"></a>暴力</h3><p>第一想到的就是暴力：一个个算呗，但是这样感觉效率还是太低了，总之贴上代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">twoSum</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>], target: <span class="built_in">int</span></span>) -&gt; <span class="type">List</span>[<span class="built_in">int</span>]:</span><br><span class="line">        n=<span class="built_in">len</span>(nums)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n-<span class="number">1</span>):</span><br><span class="line">            n1=nums[i]</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(i+<span class="number">1</span>,n):</span><br><span class="line">                n2=nums[j]</span><br><span class="line">                <span class="keyword">if</span> n1+n2==target:</span><br><span class="line">                    <span class="keyword">return</span> [i,j]</span><br></pre></td></tr></table></figure>
+
+<h3 id="其他解法"><a href="#其他解法" class="headerlink" title="其他解法"></a>其他解法</h3><p>注意到这里的目的是对于<code>x</code>，查找<code>target-x</code>是否在该表中。那么用搜索的想法的话，可以用2分法，时间复杂度为O(nlogn)。</p>
+<p>官方解法里给出了一个O(n)的算法：创建一个哈希表，遍历所有的数据，对于每一个<code>x</code>，查找<code>target-x</code>是否在这之中，如果不存在的话则将<code>x</code>存入表中，因为<code>x</code>与<code>target-x</code>肯定是双向的，所以同样也可以用<code>target-x</code>来查找<code>x</code>。利用哈希表的查找效率为O(1)，一次遍历即可。</p>
+<p>贴上代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">twoSum</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>], target: <span class="built_in">int</span></span>) -&gt; <span class="type">List</span>[<span class="built_in">int</span>]:</span><br><span class="line">        hashtable = <span class="built_in">dict</span>()</span><br><span class="line">        <span class="keyword">for</span> i, num <span class="keyword">in</span> <span class="built_in">enumerate</span>(nums):</span><br><span class="line">            <span class="keyword">if</span> target - num <span class="keyword">in</span> hashtable:</span><br><span class="line">                <span class="keyword">return</span> [hashtable[target - num], i]</span><br><span class="line">            hashtable[nums[i]] = i</span><br><span class="line">        <span class="keyword">return</span> []</span><br></pre></td></tr></table></figure>
+
+<h3 id="补充知识"><a href="#补充知识" class="headerlink" title="补充知识"></a>补充知识</h3><h4 id="enumerate函数"><a href="#enumerate函数" class="headerlink" title="enumerate函数"></a>enumerate函数</h4><p>这其中</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">enumerate</span>(nums)</span><br></pre></td></tr></table></figure>
+
+<p>是python中的枚举函数，用法如下：</p>
+<p>enumerate() 是一个 Python 内置函数，用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">citys = [<span class="string">&quot;jinan&quot;</span>, <span class="string">&quot;qingdao&quot;</span>, <span class="string">&quot;yantai&quot;</span>, <span class="string">&quot;zibo&quot;</span>]</span><br><span class="line"><span class="keyword">for</span> index,city <span class="keyword">in</span> <span class="built_in">enumerate</span>(citys):</span><br><span class="line">    <span class="built_in">print</span>(index,city)</span><br><span class="line"><span class="comment"># 输出： </span></span><br><span class="line"><span class="number">0</span> jinan</span><br><span class="line"><span class="number">1</span> qingdao</span><br><span class="line"><span class="number">2</span> yantai</span><br><span class="line"><span class="number">3</span> zibo</span><br></pre></td></tr></table></figure>
+
+<p>enumerate() 还接受第二个参数（可选），该参数允许决定索引从哪个数字开始。如果可选的 start 参数不存在，则默认情况下索引从 0 开始。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">citys = [<span class="string">&quot;jinan&quot;</span>, <span class="string">&quot;qingdao&quot;</span>, <span class="string">&quot;yantai&quot;</span>, <span class="string">&quot;zibo&quot;</span>]</span><br><span class="line"><span class="keyword">for</span> index,city <span class="keyword">in</span> <span class="built_in">enumerate</span>(citys,<span class="number">101</span>):</span><br><span class="line">    <span class="built_in">print</span>(index,city)</span><br><span class="line"><span class="comment"># 输出：</span></span><br><span class="line"><span class="number">101</span> jinan</span><br><span class="line"><span class="number">102</span> qingdao</span><br><span class="line"><span class="number">103</span> yantai</span><br><span class="line"><span class="number">104</span> zibo</span><br></pre></td></tr></table></figure>
+
+<h4 id="哈希表"><a href="#哈希表" class="headerlink" title="哈希表"></a>哈希表</h4><p>哈希表（hash tab），亦为散列表。是一个将查找表中的关键字映射成为关键字对应函数的地址。当然这一题中我们并不关注哈希表是如何实现的，但实际上哈希表的哈希函数（散列函数）也是这个内容考察的重要一部分。此处不再赘述</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/10/30/EverydayTopics-2023-Oct-30/" data-id="clocmvdlo0000f7uf9guxg291" data-title="EverydayTopics-2023-Oct-30" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/" rel="tag">哈希表</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/" rel="tag">每日一题</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2023/10/22/byd%E9%9D%A2%E7%BB%8F/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/" rel="tag">-博客开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E8%AE%B0/" rel="tag">-日记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/" rel="tag">哈希表</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/" rel="tag">每日一题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%80%83%E7%A0%94/" rel="tag">考研</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/" style="font-size: 10px;">-博客开发</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 10px;">-日记</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/" style="font-size: 10px;">哈希表</a> <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 20px;">日常</a> <a href="/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/" style="font-size: 10px;">每日一题</a> <a href="/tags/%E8%80%83%E7%A0%94/" style="font-size: 10px;">考研</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/10/30/EverydayTopics-2023-Oct-30/">EverydayTopics-2023-Oct-30</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/22/byd%E9%9D%A2%E7%BB%8F/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/19/dairy-23-10-19-1/">dairy-23-10-19-1</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/19/dairy-23-10-19/">dairy-23-10-19</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/18/dairy-23-10-18/">dairy-23-10-18</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+<!--      -->
+      &copy; 2023 BlakrPander<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
