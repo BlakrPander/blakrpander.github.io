@@ -4,19 +4,22 @@
   <meta charset="utf-8">
   
   
-<!--  <title>Hexo</title>-->
-  <title>blakrpander&#39;s blog</title>
+<!--  <title>EverydayTopics-2023-Oct-31 | Hexo</title>-->
+  <title>EverydayTopics-2023-Oct-31 | blakrpander&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="打算考研，随便投着玩的，投的系统开发部，本来以为做前后端，结果面试的时候才知道是bms电池？让我去面试了，面试流程如下：  自我介绍（1min）：我主要说自己学了什么语言，搞了啥项目自己负责的哪一块，然后点了一下自己学生会里的职责 问我学生会职责的具体职能（我是校园文化部部长） 问我兴趣爱好，我回答了一堆，说我兴趣爱好挺广泛 说工作地点在深圳能接受吗 （bms电池研发） 问我用三个词形容一下自己">
+  <meta name="description" content="题目2003. 每棵子树内缺失的最小基因值 解法本来我自己想的思路是：  对于每个节点计算其子树 对于每个分离下来的子树计算其缺失的最小基因 记录最小基因  但是这么来算的话，每次都要对子树进行一次遍历，时间复杂度大概有O(n)了，估计按照我模拟的思路也是太久了，于是遂作罢，直接看答案了。 官方题解有两个：  dfs+启发式合并但启发式合并我看不懂，后面看了一下OiWIKI也是非常一知半解，就没有">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2023/10/22/byd%E9%9D%A2%E7%BB%8F/index.html">
+<meta property="og:title" content="EverydayTopics-2023-Oct-31">
+<meta property="og:url" content="http://example.com/2023/10/31/EverydayTopics-2023-Oct-31/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="打算考研，随便投着玩的，投的系统开发部，本来以为做前后端，结果面试的时候才知道是bms电池？让我去面试了，面试流程如下：  自我介绍（1min）：我主要说自己学了什么语言，搞了啥项目自己负责的哪一块，然后点了一下自己学生会里的职责 问我学生会职责的具体职能（我是校园文化部部长） 问我兴趣爱好，我回答了一堆，说我兴趣爱好挺广泛 说工作地点在深圳能接受吗 （bms电池研发） 问我用三个词形容一下自己">
+<meta property="og:description" content="题目2003. 每棵子树内缺失的最小基因值 解法本来我自己想的思路是：  对于每个节点计算其子树 对于每个分离下来的子树计算其缺失的最小基因 记录最小基因  但是这么来算的话，每次都要对子树进行一次遍历，时间复杂度大概有O(n)了，估计按照我模拟的思路也是太久了，于是遂作罢，直接看答案了。 官方题解有两个：  dfs+启发式合并但启发式合并我看不懂，后面看了一下OiWIKI也是非常一知半解，就没有">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-10-22T02:54:06.600Z">
-<meta property="article:modified_time" content="2023-10-22T03:03:37.017Z">
+<meta property="article:published_time" content="2023-10-31T15:43:51.000Z">
+<meta property="article:modified_time" content="2023-10-31T15:58:42.260Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="每日一题">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="哈希表">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -76,63 +79,78 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-byd面经" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-EverydayTopics-2023-Oct-31" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2023/10/22/byd%E9%9D%A2%E7%BB%8F/" class="article-date">
-  <time class="dt-published" datetime="2023-10-22T02:54:06.600Z" itemprop="datePublished">2023-10-22</time>
+    <a href="/2023/10/31/EverydayTopics-2023-Oct-31/" class="article-date">
+  <time class="dt-published" datetime="2023-10-31T15:43:51.000Z" itemprop="datePublished">2023-10-31</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      EverydayTopics-2023-Oct-31
+    </h1>
+  
+
+      </header>
+    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>打算考研，随便投着玩的，投的系统开发部，本来以为做前后端，结果面试的时候才知道是bms电池？让我去面试了，面试流程如下：</p>
+        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/smallest-missing-genetic-value-in-each-subtree/">2003. 每棵子树内缺失的最小基因值</a></p>
+<h2 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h2><p>本来我自己想的思路是：</p>
 <ol>
-<li>自我介绍（1min）：我主要说自己学了什么语言，搞了啥项目自己负责的哪一块，然后点了一下自己学生会里的职责</li>
-<li>问我学生会职责的具体职能（我是校园文化部部长）</li>
-<li>问我兴趣爱好，我回答了一堆，说我兴趣爱好挺广泛</li>
-<li>说工作地点在深圳能接受吗 （bms电池研发）</li>
-<li>问我用三个词形容一下自己</li>
-<li>家族是否有遗传病史</li>
-<li>问我数字逻辑挂科了为啥挂的，我说我期末问的都挺好，但是莫名其妙挂科了，然后hr还跟我说她大一的时候高数30分，这算是安慰我吗？</li>
-<li>反问环节：<ol>
-<li>内部培训流程</li>
-<li>我会不会有竞赛机会</li>
-<li>竞聘流程</li>
+<li>对于每个节点计算其子树</li>
+<li>对于每个分离下来的子树计算其缺失的最小基因</li>
+<li>记录最小基因</li>
+</ol>
+<p>但是这么来算的话，每次都要对子树进行一次遍历，时间复杂度大概有O(n)了，估计按照我模拟的思路也是太久了，于是遂作罢，直接看答案了。</p>
+<p>官方题解有两个：</p>
+<ol>
+<li><p>dfs+启发式合并<br>但启发式合并我看不懂，后面看了一下OiWIKI也是非常一知半解，就没有耗费更多的时间在上面，直接看dfs了。</p>
+</li>
+<li><p>纯dfs<br>dfs的解法是：</p>
+<ol>
+<li>若树中无基因值为1的节点，则1为任意子树的最小缺失基因值。</li>
+<li>若树中含有基因值为1的节点，则对于其的任意子树有以下两种情况：<ol>
+<li>以该节点为根的子树不包含基因值为1的节点<br>那么其缺失值就为1</li>
+<li>以该节点为根的子树包含基因值为1的节点<br>在情况2中，该节点肯定为基因值为1的节点的<strong>先祖节点</strong>，即在基因值为1的节点的上面。</li>
 </ol>
 </li>
-<li>让我等bms二面</li>
 </ol>
-<p>总体还行，hr也很和善还和我开玩笑来着，最后提醒我多注意信息等bms二面干嘛的，要么电话面试要么tx会议面试，</p>
+<p>同时我们又知：父节点的基因值集合肯定是大于子节点的基因值集合的。</p>
+</li>
+</ol>
+<p>写到这里发现上面这一句有啥用呢？也推不出来什么结果。这题的思路还是不是很清晰，明天如果有空的话再理一下吧。	</p>
+<h2 id="知识："><a href="#知识：" class="headerlink" title="知识："></a>知识：</h2><ol>
+<li>dfs</li>
+<li>树状结构</li>
+<li>启发式合并（不会）</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/10/22/byd%E9%9D%A2%E7%BB%8F/" data-id="clocmvdlr0001f7uf9oh96paz" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/10/31/EverydayTopics-2023-Oct-31/" data-id="cloeik8or0000zaufcp3m3u0g" data-title="EverydayTopics-2023-Oct-31" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/" rel="tag">哈希表</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/" rel="tag">每日一题</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2023/10/30/EverydayTopics-2023-Oct-30/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          EverydayTopics-2023-Oct-30
-        
-      </div>
-    </a>
   
-  
-    <a href="/2023/10/19/dairy-23-10-19-1/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2023/10/30/EverydayTopics-2023-Oct-30/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">dairy-23-10-19-1</div>
+      <div class="article-nav-title">EverydayTopics-2023-Oct-30</div>
     </a>
   
 </nav>
